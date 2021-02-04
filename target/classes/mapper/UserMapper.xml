@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="cn.bdqn.mybatis.mapper.UserMapper">
+
+    <!--
+        id：是标签的唯一标识符
+            可以看做是接口方法
+    -->
+    <select id="getCount" resultType="int">
+        select count(1) from smbms_user
+    </select>
+</mapper>
